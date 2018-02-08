@@ -34,6 +34,10 @@ class Person{
 //定义一个方法
     function hello($name){
         echo $name.",你好";
+        /**
+         * 访问私有的方法
+         */
+        $this->test();
     }
 
     /**
@@ -41,6 +45,13 @@ class Person{
      */
     private function test(){
         echo "test";
+    }
+
+    /**
+     * 一个受保护的方法,只能在子类中调用
+     */
+    protected function test1(){
+        echo "test1";
     }
 }
 
