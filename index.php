@@ -6,59 +6,43 @@
  * Time: 19:09
  */
 
-class Person{
-//    定义一个私有的age字段，私有的字段,只能在类里面被访问
-    private $age = 20;
-//    定义一个字段
-    public $sex = "男";
+class File{
+    private $filename;
+//    私有的属性来保存文件句柄,同样不能被外面修改
+    private $fp;
 
     /**
-     * 构造函数,在对象被创建的时候调用(都不需要程序员显示的调用)
-     * Person constructor.
-     * @param int $age
+     * 构造函数用来打开文件
+     * File constructor.
+     * @param $filename
      */
-    public function __construct($age=100)
+    function __construct($filename)
     {
-        $this->age = $age;
+        $this->filename = $filename;
+        $this->fp = fopen($filename,'w+');
+        if(!$this->fp){
+            exit("打开文件:".$filename."失败");
+        }
+        echo "打开文件成功";
+    }
+    function write($msg){
+        fwrite($this->fp,$msg);
     }
 
     /**
-     * 析构函数，在对象销毁的时候调用(都不需要程序员显示的调用)
+     * 读出文件中所有的内容
+     * @return bool|string
      */
-    public function __destruct()
+    function readAll(){
+        return fread($this->fp,filesize($this->filename));
+    }
+    function __destruct()
     {
         // TODO: Implement __destruct() method.
-        echo "我去厕所了";
-    }
-
-//定义一个方法
-    function hello($name){
-        echo $name.",你好";
-        /**
-         * 访问私有的方法
-         */
-        $this->test();
-    }
-
-    /**
-     * 一个私有的方法，只有类自身才能够调用
-     */
-    private function test(){
-        echo "test";
-    }
-
-    /**
-     * 一个受保护的方法,只能在子类中调用
-     */
-    protected function test1(){
-        echo "test1";
+        fclose($this->fp);
     }
 }
-
-$person = new Person();
-
-$person ->hello('老王');
-
-//echo $person->age;
-
-//$person ->test();
+$file = new File("./1.txt");
+//exit中断脚本，析构函数依旧会被调用
+exit();
+$file->write("www.noxue.com");
