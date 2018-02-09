@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24c70976-4d77-4ba1-97ef-d6d0d7c0dd90" name="默认的" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/dbtest.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/index2.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,14 +24,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dbtest.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dbtest.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dbtest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-403">
+            <state relative-caret-position="-253">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <marker date="1518141144179" expanded="true" signature="821:842" ph="select * fro... nx_type" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index2.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index2.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="347">
+              <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -57,6 +66,7 @@
       <list>
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/dbtest.php" />
+        <option value="$PROJECT_DIR$/index2.php" />
       </list>
     </option>
   </component>
@@ -68,8 +78,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-236" />
-    <option name="y" value="173" />
+    <option name="x" value="-45" />
+    <option name="y" value="212" />
     <option name="width" value="1320" />
     <option name="height" value="734" />
   </component>
@@ -133,15 +143,15 @@
       <option name="presentableId" value="Default" />
       <updated>1518088117295</updated>
       <workItem from="1518088118617" duration="8273000" />
-      <workItem from="1518137105132" duration="3701000" />
+      <workItem from="1518137105132" duration="5073000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11974000" />
+    <option name="totallyTimeSpent" value="13346000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-236" y="173" width="1320" height="734" extended-state="0" />
+    <frame x="-45" y="212" width="1320" height="734" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25555557" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -235,11 +245,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dbtest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-403">
+        <state relative-caret-position="-253">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <marker date="1518141144179" expanded="true" signature="821:842" ph="select * fro... nx_type" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
