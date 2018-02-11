@@ -1,39 +1,58 @@
 <?php
 
-abstract class Animal{
-//    抽象方法，必须在子类被实现
-    abstract function eat($something);
-//一般的方法，可以直接在抽象类里面实现，跟一般的类中的方法一样.
-    function run(){
-        echo "行走<br/>";
-    }
-}
-
-abstract class Monkey extends Animal{
-    abstract function speak($words);
+/**
+ * 定义接口，相当于定义一个标准
+ * Interface IUsb
+ */
+interface IUsb{
+    public function write($msg);
+    function read();
 }
 
 /**
- * 继承抽象类，实现抽象方法的快捷键,alt+enter
- * 1.抽象类不能被直接实例化(用来创建对象)
- * 2.抽象类中的抽象方法必须在子类中实现
- * 3.抽象类可以继承抽象类
- * 4.抽象类中的抽象方法 不能是private的权限
- * Class Cat
+ * Class Upan
  */
-class Person extends Monkey {
+class Upan implements Iusb{
 
-    function eat($something)
+    public function write($msg)
     {
-        echo "吃$something<br/>";
+        echo "写入U盘$msg<br/>";
     }
 
-    function speak($words)
+    function read()
     {
-        echo "说:$words";
+        return "从U盘读取一段数据";
     }
 }
 
-$person = new Person();
-$person->speak("hello world");
+/**
+ * Class NeiCunKa
+ */
+class NeiCunKa implements IUsb{
 
+    public function write($msg)
+    {
+        echo "写入到内存卡:$msg<br/>";
+    }
+
+    function read()
+    {
+        echo "从内存卡读取";
+    }
+}
+
+$pan = new Upan();
+//$pan->write("数据");
+
+$n = new NeiCunKa();
+/**
+ * 直接使用IUsb类型作为参数，这样的话，只要实现了IUsb接口的类型,都可以传进去
+ * @param IUsb $u
+ */
+function test(IUsb $u){
+    $u->write('数据111');
+}
+//这里传内存卡
+test($n);
+//这里传U盘
+test($pan);
