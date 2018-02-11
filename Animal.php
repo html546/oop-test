@@ -7,7 +7,7 @@
  */
 
 class Animal{
-    public $hp;
+    public $hp=0;
     private $t;
     protected $d='ddd';
     public function __construct()
@@ -15,7 +15,7 @@ class Animal{
         echo "小动物被创造<br/>";
     }
 
-    public function run(){
+    private function run(){
         echo "行走";
     }
 }
