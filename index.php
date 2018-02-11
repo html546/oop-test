@@ -9,20 +9,29 @@ abstract class Animal{
     }
 }
 
+abstract class Monkey extends Animal{
+    abstract function speak($words);
+}
+
 /**
  * 继承抽象类，实现抽象方法的快捷键,alt+enter
  * 1.抽象类不能被直接实例化(用来创建对象)
  * 2.抽象类中的抽象方法必须在子类中实现
  * Class Cat
  */
-class Cat extends Animal{
+class Person extends Monkey {
 
     function eat($something)
     {
         echo "吃$something<br/>";
     }
+
+    function speak($words)
+    {
+        echo "说:$words";
+    }
 }
 
-$cat = new Cat();
-$cat->eat("东西");
+$person = new Person();
+$person->speak("hello world");
 
