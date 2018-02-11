@@ -17,9 +17,11 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="31" column="16" lean-forward="false" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
-              <folding />
+            <state relative-caret-position="175">
+              <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+              <folding>
+                <marker date="1518358472669" expanded="true" signature="140:158" ph="select * fro... xxxx" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -50,9 +52,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="-7" />
-    <option name="y" value="217" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="29" />
+    <option name="y" value="351" />
     <option name="width" value="1320" />
     <option name="height" value="735" />
   </component>
@@ -123,15 +125,15 @@
       <workItem from="1518088118617" duration="8273000" />
       <workItem from="1518137105132" duration="10588000" />
       <workItem from="1518219739108" duration="2389000" />
-      <workItem from="1518307200803" duration="11651000" />
+      <workItem from="1518307200803" duration="11903000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32901000" />
+    <option name="totallyTimeSpent" value="33153000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="217" width="1320" height="735" extended-state="1" />
+    <frame x="29" y="351" width="1320" height="735" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26349208" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -172,7 +174,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1518358472669" expanded="true" signature="140:158" ph="select * fro... xxxx" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -204,7 +208,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1518358472669" expanded="true" signature="140:158" ph="select * fro... xxxx" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -212,7 +218,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1518358472669" expanded="true" signature="140:158" ph="select * fro... xxxx" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -279,9 +287,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="31" column="16" lean-forward="false" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
-          <folding />
+        <state relative-caret-position="175">
+          <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+          <folding>
+            <marker date="1518358472669" expanded="true" signature="140:158" ph="select * fro... xxxx" />
+          </folding>
         </state>
       </provider>
     </entry>

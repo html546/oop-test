@@ -7,6 +7,7 @@ trait LogTrait{
 }
 
 trait sqlError{
+    public $sql = "select * from xxxx;";
     public function error(){
         echo $this->name."sql语句错误了<br/>";
     }
@@ -15,6 +16,9 @@ trait sqlError{
 class Test1{
     public $name = "test1";
     use LogTrait,sqlError;
+    public function test(){
+        echo $this->sql;
+    }
 }
 
 class Test2{
@@ -30,6 +34,7 @@ class Test3{
 $test1 = new Test1();
 $test1->log('日志信息');
 $test1->error();
+$test1->sql;
 
 $test2 = new Test2();
 $test2->log('日志信息');
