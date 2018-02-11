@@ -1,14 +1,16 @@
 <?php
 
-spl_autoload_register(function($name){
-    require_once "$name.php";
-});
+class Test{
+    public $t = 0;
+    function tt(){
+        $this->t=100;
+    }
+}
 
-/*$cat = new Cat();
-$cat->run();*/
+$t1 = new Test();
+$t1->tt();
 
-$person = new Person();
-$person->run();
-$person->pa();
+$t2 = new Test();
+$t2->tt();
 
 
