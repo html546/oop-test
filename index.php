@@ -17,6 +17,8 @@ abstract class Monkey extends Animal{
  * 继承抽象类，实现抽象方法的快捷键,alt+enter
  * 1.抽象类不能被直接实例化(用来创建对象)
  * 2.抽象类中的抽象方法必须在子类中实现
+ * 3.抽象类可以继承抽象类
+ * 4.抽象类中的抽象方法 不能是private的权限
  * Class Cat
  */
 class Person extends Monkey {
