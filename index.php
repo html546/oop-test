@@ -2,6 +2,7 @@
 
 /**
  * 定义接口，相当于定义一个标准
+ * 接口中的方法必须是public的
  * Interface IUsb
  */
 interface IUsb{
@@ -10,49 +11,31 @@ interface IUsb{
 }
 
 /**
- * Class Upan
+ * Interface IExt
  */
-class Upan implements Iusb{
+interface IExt{
+    function other();
+}
+
+/**
+ * 实现多个接口，用逗号分隔开
+ * 同样要实现多个接口中所有的方法
+ * Class Test
+ */
+class Test implements IUsb,IExt{
 
     public function write($msg)
     {
-        echo "写入U盘$msg<br/>";
+        // TODO: Implement write() method.
     }
 
     function read()
     {
-        return "从U盘读取一段数据";
+        // TODO: Implement read() method.
     }
-}
 
-/**
- * Class NeiCunKa
- */
-class NeiCunKa implements IUsb{
-
-    public function write($msg)
+    function other()
     {
-        echo "写入到内存卡:$msg<br/>";
-    }
-
-    function read()
-    {
-        echo "从内存卡读取";
+        // TODO: Implement other() method.
     }
 }
-
-$pan = new Upan();
-//$pan->write("数据");
-
-$n = new NeiCunKa();
-/**
- * 直接使用IUsb类型作为参数，这样的话，只要实现了IUsb接口的类型,都可以传进去
- * @param IUsb $u
- */
-function test(IUsb $u){
-    $u->write('数据111');
-}
-//这里传内存卡
-test($n);
-//这里传U盘
-test($pan);
