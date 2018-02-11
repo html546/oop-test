@@ -11,18 +11,14 @@ interface IUsb{
 }
 
 /**
+ * 可以通过extends继承其他接口
  * Interface IExt
  */
-interface IExt{
+interface IExt extends IUsb {
     function other();
 }
 
-/**
- * 实现多个接口，用逗号分隔开
- * 同样要实现多个接口中所有的方法
- * Class Test
- */
-class Test implements IUsb,IExt{
+class Test implements IExt{
 
     public function write($msg)
     {
