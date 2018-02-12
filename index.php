@@ -1,25 +1,26 @@
 <?php
 
-class Person{
-    public $name = "张三";
-    private $sex="男";
-    protected $age = 123;
-    public function __construct()
-    {
+class Animal{
+    final public function run(){
+        echo "Animal run<br/>";
     }
-    public function __destruct()
-    {
-        // TODO: Implement __destruct() method.
+    public function eat(){
+        echo "Animal eat<br/>";
     }
-    function Test(){
-        echo "test";
+}
+
+class Person extends Animal{
+    public function eat()
+    {
+        echo "person eat<br/>";
     }
 
+    /**
+     * 以下是错误写法，因为final修饰的方法不能被子类覆盖
+     */
+//    public function run(){
+//        echo "person run<br/>";
+//    }
 }
 
 
-$person = new Person();
-//遍历对象中的可见属性(也就是public权限的字段)
-foreach ($person as $k=>$v){
-    echo "$k ----- $v<br/>";
-}
