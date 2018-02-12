@@ -3,10 +3,17 @@
 class Test{
     public function __call($name, $arguments)
     {
-        echo $name;
-        var_dump($arguments);
+        echo "$name 页面不存在";
+    }
+    function index(){
+        echo "index<br/>";
+    }
+    function show(){
+        echo "show<br/>";
     }
 }
 
 $t = new Test();
-$t->admin(1,2,3,'xxxx');
+$t->index();
+$t->show();
+$t->shoq();
