@@ -1,21 +1,26 @@
 <?php
 
-function logInfo($class){
-    $class->log("日志信息");
-}
+class Person{
+    public $name;
+    public function __construct($name)
+    {
+        $this->name=$name;
+    }
 
-class Loger{
-    function log($msg){
-        echo $msg;
+    function show(){
+        echo "姓名:".$this->name;
     }
 }
 
-$l = new Loger;
-//第一种方法，不适用匿名类
-//logInfo($l);
-//第二种方法,创建匿名类.
-logInfo(new class{
-    function log($msg){
-        echo $msg;
-    }
-});
+/**
+ * 类型约束的意义在于，只有参数类型与约束的类型一样的时候，才能调用成功
+ * @param Person $person
+ */
+function test(Person $person){
+    $person->show();
+}
+
+$person = new Person('张三');
+test($person);
+//此处传1进去，类型和Person类不一样，所以会报错
+//test(1);
