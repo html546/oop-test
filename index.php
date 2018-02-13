@@ -1,15 +1,22 @@
 <?php
-//就算使用命名空间，依然需要先引入php文件，否则找不到其中的类
-spl_autoload_register(function($name){
-    require_once "$name.php";
-});
+//在命名空间外面写代码是错误的操作
+//$b=2;  //错误
+namespace Name1{
+    class Person{
 
-function test(){
-    echo "test<br/>";
+    }
 }
+//在命名空间外面写代码是错误的操作
+//$a=1;  //错误
+namespace Name2{
+    class Person{
 
-use App\Person;
-
-
-$person = new Person();
-$person->t();
+    }
+}
+//可以不给命名空间名字
+namespace {
+//    use name1\Person as p1,name2\Person as p2;
+//    完全限定类名 = 当前命名空间 + 限定类名
+      $p1 = new Name1\Person();
+      $p2 = new Name2\Person();
+}
