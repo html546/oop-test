@@ -3,8 +3,12 @@
 spl_autoload_register(function($name){
     require_once "$name.php";
 });
-//一个use引入多个命名空间中的东西，用逗号隔开
-use App\Person as Aperson,Bpp\Person as Bperson;
 
-$person = new Aperson();
-$person->Test();
+use App\Person;
+//这个函数是全局命名空间中的函数
+function test(){
+    echo "test<br/>";
+}
+
+$person = new Person();
+$person->t();
