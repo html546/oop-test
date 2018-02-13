@@ -4,6 +4,10 @@ spl_autoload_register(function($name){
     require_once "$name.php";
 });
 
+function test(){
+    echo "test<br/>";
+}
+
 use App\Person;
 
 
