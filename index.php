@@ -5,10 +5,7 @@ spl_autoload_register(function($name){
 });
 
 use App\Person;
-//这个函数是全局命名空间中的函数
-function test(){
-    echo "test<br/>";
-}
+
 
 $person = new Person();
 $person->t();
