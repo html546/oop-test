@@ -29,8 +29,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="79">
-              <caret line="14" column="63" lean-forward="false" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
+            <state relative-caret-position="175">
+              <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -66,8 +66,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-49" />
-    <option name="y" value="339" />
+    <option name="x" value="-106" />
+    <option name="y" value="320" />
     <option name="width" value="1320" />
     <option name="height" value="678" />
   </component>
@@ -146,15 +146,15 @@
       <workItem from="1518307200803" duration="12294000" />
       <workItem from="1518393211559" duration="10980000" />
       <workItem from="1518479287055" duration="8685000" />
-      <workItem from="1518570660505" duration="905000" />
+      <workItem from="1518570660505" duration="1363000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54114000" />
+    <option name="totallyTimeSpent" value="54572000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-49" y="339" width="1320" height="678" extended-state="0" />
+    <frame x="-106" y="320" width="1320" height="678" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27539682" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -295,6 +295,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17900">
           <caret line="716" column="21" lean-forward="false" selection-start-line="716" selection-start-column="21" selection-end-line="716" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -342,8 +343,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="14" column="63" lean-forward="false" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
+        <state relative-caret-position="175">
+          <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
           <folding />
         </state>
       </provider>

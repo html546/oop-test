@@ -12,6 +12,10 @@ function test(){
 
 try{
     test();
-}catch (OtherException|Exception $e){//多种异常可以在一个catch语句中处理,用|分隔
-    echo "OtherException:".$e->getMessage();
+}catch (OtherException $e){//多种异常可以在一个catch语句中处理,用|分隔
+    echo $e->getMessage();
+}catch (Exception $e){
+    echo $e->getMessage();
+}finally{
+    echo "不管是否有异常，这里的代码总是会被执行";
 }
