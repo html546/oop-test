@@ -12,8 +12,6 @@ function test(){
 
 try{
     test();
-}catch (OtherException $e){//自定义的Exception放在前面捕获
+}catch (OtherException|Exception $e){//多种异常可以在一个catch语句中处理,用|分隔
     echo "OtherException:".$e->getMessage();
-}catch (Exception $e){
-    echo "Exception:".$e->getMessage();
 }
