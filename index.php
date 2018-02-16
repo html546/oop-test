@@ -14,14 +14,51 @@ class Point{
 
 class Map{
     public $poits;
+    public $people;
+    public function __construct()
+    {
+        //默认没有一个人
+        $this->people = [];
+    }
+
+    /**
+     * 添加一个人到地图中
+     * @param Person $p
+     */
+    function add(Person $p){
+        $this->people[] = $p;
+    }
+
+    public function __toString()
+    {
+        $str = "当前人物所有信息<br/>";
+//        遍历所有人的信息，拼接起来返回
+        foreach ($this->people as $person){
+            $str.=$person;
+        }
+        return $str;
+    }
+    function move(){
+        /*for ($i = 0;$i<count($this->people);$i++){
+            $this->people[$i]->point->x += 10;
+            $this->people[$i]->point->y += 20;
+        }*/
+//        如果是对象，那么可以通过临时变量修改他其中的属性值
+        foreach ($this->people as $person){
+            $person->point->x += 10;
+            $person->point->y += 20;
+        }
+    }
 }
 
 class Person{
+    public $name;
     public $point;
 
 //    人物初始位置
-    public function __construct(Point $point)
+    public function __construct($name,Point $point)
     {
+        $this->name = $name;
         $this->point=$point;
     }
 
@@ -37,12 +74,16 @@ class Person{
         return "x:".$this->point->x." y:".$this->point->y."<br/>";
     }
 }
-//初始化人的位置
-$start = new Point();
-$person = new  Person($start);
 
-echo "当前人的位置: ".$person;
-//移动人到新的位置
-$end = new Point(100,200);
-$person->move($end);
-echo "当前人的位置 :".$person;
+$map = new Map();
+echo $map;
+$map->add(new Person('无极剑圣',new Point(10,20)));
+$map->add(new Person('盖伦',new Point(50,20)));
+$map->add(new Person('王昭君',new Point(150,200)));
+echo $map;
+//移动所有角色，并输出所有角色的位置信息
+$map->move();
+echo $map;
+
+$map->move();
+echo $map;
