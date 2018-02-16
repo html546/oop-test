@@ -1,48 +1,20 @@
 <?php
 
-//这个类用来表示一个点
-class Point{
-    public $x;
-    public $y;
+//面向过程
 
-    public function __construct($x=0,$y=0)
-    {
-        $this->x = $x;
-        $this->y = $y;
-    }
-}
+//人的位置
+$x = 0;
+$y = 0;
 
-class Map{
-    public $poits;
-}
-
-class Person{
-    public $point;
-
-//    人物初始位置
-    public function __construct(Point $point)
-    {
-        $this->point=$point;
-    }
-
-    /**
-     * 人物移动到某个点
-     * @param Point $point
-     */
-    function move(Point $point){
-        $this->point = $point;
-    }
-    public function __toString()
-    {
-        return "x:".$this->point->x." y:".$this->point->y."<br/>";
-    }
-}
-//初始化人的位置
-$start = new Point();
-$person = new  Person($start);
-
-echo "当前人的位置: ".$person;
 //移动人到新的位置
-$end = new Point(100,200);
-$person->move($end);
-echo "当前人的位置 :".$person;
+function move($tx,$ty){
+    global $x,$y;
+
+    $x = $tx;
+    $y = $ty;
+}
+
+echo "当前所在位置:x:$x,y:$y<br/>";
+
+move(100,200);
+echo "当前所在位置:x:$x,y:$y<br/>";
